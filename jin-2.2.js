@@ -4,7 +4,7 @@
 // http://3yew.com/
 //
 // Copyright 2012, jin
-// 20130323--jinfu
+// 
 
 (function(window,undefined){
 
