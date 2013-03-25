@@ -1,4 +1,4 @@
-// jin JavaScript Library v2.1
+// jin JavaScript Library v2.2
 //
 // http://weibo.com/chenjinfu/
 // http://3yew.com/
