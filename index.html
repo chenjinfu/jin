@@ -1,0 +1,461 @@
+<!doctype html> 
+<html><head>
+	<meta charset="utf-8">
+	<title>冷笑话精选</title>
+	<meta name="author" content="feibo by jin"/>
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta content="false" id="twcClient" name="twcClient" />
+	<link href="css/global.css" rel="stylesheet" type="text/css"/>
+<!--平台差异化css-->
+	<link href="css/lxhjx.css" rel="stylesheet" type="text/css"/>
+<!--MP3模块-->
+	<link rel="stylesheet" href="johndyer-mediaelement-96a9f4a/build/mediaelementplayer.min.css" />
+	<link rel="stylesheet" href="johndyer-mediaelement-96a9f4a/build/fb-skins.css" />
+<!--基本数据定义-->
+	<script>
+	var gdata={
+		//公共
+		ua:"{$stats_ua}",		//分类id
+		u:"{$stats_ref}",		//统计频道
+		//统计
+		stats:{
+			ref:"channel",		//来源
+			u:"wx.qq.com"		//目标
+		},
+		//模块
+		taobao:true,			//淘宝请求
+		ad:true,				//banner广告请求
+		app:true,				//app推荐请求
+		comm:true,				//评论请求
+		share:true,				//分享数请求
+		like:true,				//喜欢数请求
+		weibo:{					//微博关注
+			uid:"23233284",
+			anthorize_url:"http://"
+		},
+		//页面
+		list:{
+			id:"1",
+			ids:"12,13"			// 列表页文章id
+		},
+		detail:{
+			id:"12"				//详情页id
+		},
+		reclist:{},				//推荐分类页
+		hym:false,				//往期回顾
+		history:{				//公共主页
+			template:"default",	//对应模版
+			show_comment:"1",	//显示评论数
+			show_like:"1",		//显示喜欢数
+			show_share: "1"		//显示分享数
+		},
+		action:"list"			//页面类型
+	};
+	//多文章id队列
+	if(gdata.list && gdata.list.ids){
+		gdata.idlist=gdata.list.ids;
+	}else if(gdata.detail && gdata.detail.id){
+		gdata.idlist=gdata.detail.id;
+	}
+	//id
+	if(gdata.list && gdata.list.id){
+		gdata.id=gdata.list.id;
+	}else if(gdata.detail && gdata.detail.id){
+		gdata.id=gdata.detail.id;
+	}
+	</script>
+	<!--[if lt IE 9]>
+    <script type="text/javascript">
+	// html5shiv MIT @rem remysharp.com/html5-enabling-script
+	// iepp v1.6.2 MIT @jon_neal iecss.com/print-protector
+    /*@cc_on(function(a,b){function r(a){var b=-1;while(++b<f)a.createElement(e[b])}if(!(!window.attachEvent||!b.createStyleSheet||!function(){var a=document.createElement("div");a.innerHTML="<elem></elem>";return a.childNodes.length!==1}())){a.iepp=a.iepp||{};var c=a.iepp,d=c.html5elements||"abbr|article|aside|audio|canvas|datalist|details|figcaption|figure|footer|header|hgroup|mark|meter|nav|output|progress|section|summary|time|video",e=d.split("|"),f=e.length,g=new RegExp("(^|\\s)("+d+")","gi"),h=new RegExp("<(/*)("+d+")","gi"),i=/^\s*[\{\}]\s*$/,j=new RegExp("(^|[^\\n]*?\\s)("+d+")([^\\n]*)({[\\n\\w\\W]*?})","gi"),k=b.createDocumentFragment(),l=b.documentElement,m=l.firstChild,n=b.createElement("body"),o=b.createElement("style"),p=/print|all/,q;c.getCSS=function(a,b){if(a+""===undefined)return"";var d=-1,e=a.length,f,g=[];while(++d<e){f=a[d];if(f.disabled)continue;b=f.media||b,p.test(b)&&g.push(c.getCSS(f.imports,b),f.cssText),b="all"}return g.join("")},c.parseCSS=function(a){var b=[],c;while((c=j.exec(a))!=null)b.push(((i.exec(c[1])?"\n":c[1])+c[2]+c[3]).replace(g,"$1.iepp_$2")+c[4]);return b.join("\n")},c.writeHTML=function(){var a=-1;q=q||b.body;while(++a<f){var c=b.getElementsByTagName(e[a]),d=c.length,g=-1;while(++g<d)c[g].className.indexOf("iepp_")<0&&(c[g].className+=" iepp_"+e[a])}k.appendChild(q),l.appendChild(n),n.className=q.className,n.id=q.id,n.innerHTML=q.innerHTML.replace(h,"<$1font")},c._beforePrint=function(){o.styleSheet.cssText=c.parseCSS(c.getCSS(b.styleSheets,"all")),c.writeHTML()},c.restoreHTML=function(){n.innerHTML="",l.removeChild(n),l.appendChild(q)},c._afterPrint=function(){c.restoreHTML(),o.styleSheet.cssText=""},r(b),r(k);if(c.disablePP)return;m.insertBefore(o,m.firstChild),o.media="print",o.className="iepp-printshim",a.attachEvent("onbeforeprint",c._beforePrint),a.attachEvent("onafterprint",c._afterPrint)}})(this,document)@*/
+    </script>
+    <![endif]-->
+</head>
+<body>
+<div class="layout" id="layout">
+    <header class="css-reset lay-header">
+		<h1 class="logo"><em>冷笑话精选</em></h1>
+		<h2 class="logoinfo"><em>来点开心果，来电幽默感</em></h2>
+		<a data-weibo="true" class="our" href="#"></a>
+		<a class="hy" href="#"><img src="images/hy.png" width="55" height="49"/></a>
+		<a class="hy-link" href="#"></a>
+	</header><!--lay-header-->
+	<!--<header class="css-reset lay-header" style="background:#172331 url(img/w640-header3.jpg) no-repeat right top;color:#fff;">
+		<div class="logo"><h1>冷笑话精选</h1><span>POCKET ENGLISH</span></div>
+		<a data-weibo="true" class="our" href="#"></a>
+	</header>--><!--lay-header-->
+	<div class="lay-main">
+		<div id="lay-ad1" class="css-reset lay-ad" pos="01_3ewewe"><a href="#"><img src="img/2.jpg"/></a></div><!--lay-ad-->
+		<section class="lay-art">
+			<article class="lay-list"><div class="list-box">
+				<!--<dl class="css-reset mp3-box clearfix">
+					<dt class="image" data-mp3img="true"><a href="#"><img src="img/asdfsfasfas.png"/></a></dt>
+					<dd class="con">
+						<div class="num">01</div>
+						<div class="tit">原来你也在这里</div>
+						<div class="aut">刘落英</div>
+						<div class="mus"><audio style="display:none;width:210px;" class="mejs-ted" src="johndyer-mediaelement-96a9f4a/media/AirReview-Landmarks-02-ChasingCorporate.mp3" type="audio/mp3" controls></audio></div>
+					</dd>
+				</dl>
+				<dl class="css-reset mp3-box clearfix">
+					<dt class="image"></dt>
+					<dd class="con">
+						<div class="num">02</div>
+						<div class="tit">原来你也在这里</div>
+						<div class="aut">刘落英</div>
+						<div class="mus"><audio style="display:none;width:210px;" class="mejs-ted" src="johndyer-mediaelement-96a9f4a/media/AirReview-Landmarks-02-ChasingCorporate.mp3" type="audio/mp3" controls></audio></div>
+					</dd>
+				</dl>
+				<dl class="css-reset mp3-box clearfix">
+					<dt class="image" data-mp3img="true"><a href="#"><img src="img/asdfsfasfas.png"/></a></dt>
+					<dd class="con">
+						<div class="num">03</div>
+						<div class="tit">原来你也在这里</div>
+						<div class="aut">刘落英</div>
+						<div class="mus"><audio style="display:none;width:210px;" class="mejs-ted" src="johndyer-mediaelement-96a9f4a/media/AirReview-Landmarks-02-ChasingCorporate.mp3" type="audio/mp3" controls></audio></div>
+					</dd>
+				</dl>-->
+				<div class="art-txt">
+					<p>jjjjjj老子这么好的一个爷们，可长可短能胖能瘦，装的了逼，耍得了贱，扮得了正太，演的了大叔，仿得起屌丝，变的了高富帅，玩得起志玲，咽得下凤姐，斥退过死缠烂打的约炮少女，躲得了大胸无脑的失足少婦，你讲笑话我可以扶墙抽搐，你要玩神秘我掘地三尺。&nbsp;得之你幸，失之你命。<br></p><p>【评论也疯狂】<br></p><p>@lcc浅笑：我靠，我发现自己最近好英俊！下面这个境界有意向!<br></p><p>@e屌丝日记：老娘这么好的一个姑娘，可直可弯能屈能伸，卖的了萌，耍得了二，扮得了少女，演的了女王，晒的了下限，红的了脸颊，玩的了小清新，咽得下重口味，斥退过死皮赖脸的无知少年，躲过了不怀好意的搭讪大叔，你讲笑话我可以拍桌大笑，你要玩文艺我仰望星空。&nbsp;得之你幸，失之你命！<br></p><p>@钱姣珑：连凤姐都能咽下！牛逼啊！这是怎样一种境界？！<br></p><p>@Linki_糖果不甜：要不要帮你申请为国家保护动物啊？<br></p><p>@无敌张：我这样的爷们儿你们不稀罕就后悔去吧。</p>
+				</div>
+				<div class="css-reset list-btn">
+				<a class="btn-share" data-sharebox="true" data-id="1" data-desc="http://www.lengxiaohua.cn" data-title="一个冷笑话" data-img="/x/img/2.jpg" href="#" data-statsu="share" data-statsp="1" data-statsid="1"><span>分享至朋友圈</span></a>
+				<span class="l"></span>
+				<a data-aboutour="true" class="btn-aboutour" href="weixin://profile/wxid_6449084490911" data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1"><span>关注冷笑话</span></a>
+				</div>
+				<div class="css-reset btn-info2">
+					<span><img src="images/btn-info2.png" width="27"/><em id="sharenum12">63232363</em>人分享了</span>
+				</div>
+				<div class="css-reset btn-info">
+					<span><em id="sharenum12">63232363</em>人分享，推荐给好友吧~</span>
+					<span class="img"><img src="images/btn-info.png" width="20"/></span>
+				</div>
+				<div class="css-reset list-btn" style="width:131px;">
+				<a class="btn-share" data-sharebox="true" data-id="1" data-desc="http://www.lengxiaohua.cn" data-title="一个冷笑话" data-img="/x/img/2.jpg" href="#" data-statsu="share" data-statsp="1" data-statsid="1"><span>分享至朋友圈</span></a>
+				</div>
+				<div class="css-reset list-btn list-like">
+					<a class="btn-like" data-sharebox="true" data-id="12" href="javascript:void(0);" data-statsu="like" data-statsp="1" data-statsid="1"><span>我很喜欢</span><em class="ico-like"></em></a>
+					<div class="i-img"><img src="images/btn-info2.png" width="27"/></div>
+					<div class="i-count"><em id="likenum12">162363</em>人喜欢</div>
+				</div>
+				<aside class="css-reset com-box" data-com="true">
+					<div id="comlist12" class="com-list" data-comlist="true">
+						<h3><div class="ico"></div></h3>
+						<div id="comjinhua12" class="com-jh">
+							<dl>
+								<dt>请说我不黑1</dt>
+								<dd>虽没有日本鬼子的残忍，但是要愚昧，太冲动，太荒谬了。</dd>
+								<dd class="ico"></dd>
+							</dl>
+							<dl>
+								<dt>韩志国</dt>
+								<dd>虽没有日本鬼子的残忍，但是要愚昧，太冲动，太荒谬了。</dd>
+								<dd class="ico"></dd>
+							</dl>
+							<dl>
+								<dt>韩志国</dt>
+								<dd>虽没有日本鬼子的残忍，但是要愚昧，太冲动，太荒谬了。</dd>
+								<dd class="ico"></dd>
+							</dl>
+							<dl>
+								<dt>韩志国</dt>
+								<dd>虽没有日本鬼子的残忍，但是要愚昧，太冲动，太荒谬了。</dd>
+								<dd class="ico"></dd>
+							</dl>
+						</div>
+						<div id="comord12" data-comord="true"></div>
+					</div>
+					<div class="com-btn">
+						<a id="comcount12" href="javascript:void(0);" data-id="12" data-commore2="true" data-page="1"><span class="ico-h650">评论<em class="comcount">(0)</em></span></a><a data-id="12" data-comadd="true" href="#"><span class="ico-h700">说两句</span></a>
+					</div>
+					<div id="comadd12" class="com-add" style="display:none;">
+						<ul>
+							<li class="com-con-box">
+								<div class="point"></div>
+								<textarea id="content12" name="content" required placeholder="随便写点什么"></textarea>
+							</li>
+							<li>
+								<input id="username12" type="text" name="username" required maxlength="20" placeholder="昵称"><a data-id="12" data-submit="true" class="submit" href="#">发布</a>
+							</li>
+						</ul>
+					</div>
+				</aside>
+			</div></article>
+			<article class="lay-list"><div class="list-box">
+				<!--<div class="css-reset yk-player" id="yk-player" data-vid="XNDYwMTk4MDU2" data-yk="true"></div>-->
+				<div class="art-txt">
+					<p>jjjjjj老子这么好的一个爷们，可长可短能胖能瘦，装的了逼，耍得了贱，扮得了正太，演的了大叔，仿得起屌丝，变的了高富帅，玩得起志玲，咽得下凤姐，斥退过死缠烂打的约炮少女，躲得了大胸无脑的失足少婦，你讲笑话我可以扶墙抽搐，你要玩神秘我掘地三尺。&nbsp;得之你幸，失之你命。<br></p><p>【评论也疯狂】<br></p><p>@lcc浅笑：我靠，我发现自己最近好英俊！下面这个境界有意向!<br></p><p>@e屌丝日记：老娘这么好的一个姑娘，可直可弯能屈能伸，卖的了萌，耍得了二，扮得了少女，演的了女王，晒的了下限，红的了脸颊，玩的了小清新，咽得下重口味，斥退过死皮赖脸的无知少年，躲过了不怀好意的搭讪大叔，你讲笑话我可以拍桌大笑，你要玩文艺我仰望星空。&nbsp;得之你幸，失之你命！<br></p><p>@钱姣珑：连凤姐都能咽下！牛逼啊！这是怎样一种境界？！<br></p><p>@Linki_糖果不甜：要不要帮你申请为国家保护动物啊？<br></p><p>@无敌张：我这样的爷们儿你们不稀罕就后悔去吧。</p>
+				</div>
+			</div></article>
+		</section><!--lay-art-->
+		<section class="css-reset lay-mod mod-hy">
+			<h2 class="mod-title hy-tit">往期回顾<span>History</span></h2>
+			<div class="hy-list" id="hy-list">
+				<h3><a href="#">两则视频，介绍iPad mini和Smart Cover</a></h3>
+				<h3><a href="#">XP用户们，你们落伍了</a></h3>
+				<h3><a href="#">微软Surface RT平板电脑上手玩</a></h3>
+				<h3><a href="#">嘻哈搞怪多元素，微软再推4个Win8宣传</a></h3>
+				<h3><a href="#">今日微软一掷千金：要让纽约时代广场变Win8开始屏幕</a></h3>
+				<h3><a href="#">俄罗斯发布第一台仿真女性机器人（图）</a></h3>
+				<a class="btn" href="#">获取往期精彩内容</a>
+			</div>
+		</section><!--lay-hy-->
+		<div id="mod-fb" class="css-reset lay-mod mod-fb">
+			<h2 class="mod-title fb-tit">小编互动<span>communication</span></h2>
+			<div class="fb-con">
+				<p class="txt">谢谢大家对星座谜语的支持 如果有什么意见和建议，欢迎大家告诉小编</p>
+			</div>
+			<a id="fb-btn-add" class="fb-btn-add" href="#">我来说两句</a>
+			<ul class="fb-form" id="fb-form">
+				<li><textarea id="fb-content" name="content" required placeholder="我的想法是"></textarea></li>
+				<li>
+					<input id="fb-email" type="email" name="email" required maxlength="32" placeholder="邮箱地址"><a id="fb-submit" class="fb-submit" href="#">发布</a>
+				</li>
+			</ul>
+		</div><!--lay-fb-->
+		<div id="mod-app" class="css-reset" style="display:none;"></div><!--mod-app-->
+		<div class="css-reset"><div class="lay-mod mod-app">
+			<h2 class="mod-title app-tit">精彩应用<span>Amazing app</span></h2>
+			<div class="app-con-box clearfix">
+				<div class="app-con"><div class="app-con2">
+					<h3>冷笑话精选</h3>
+					<p>2000万人都喜欢微博上最火最受欢迎的冷笑话精选,超过2000万人喜欢与推荐最新鲜冷笑话每天提供最精彩的</p>
+					<div class="app-btn-ios app-lxh">
+						<a appid="33" platformid="2323" pos="33" href="javascript:void(0);" link="javascript:void(0);">正式版下载</a><a appid="33" platformid="2323" pos="33" href="javascript:void(0);" link="http://lengxiaohua.cn/">越狱版下载</a>
+					</div>
+					<div class="app-btn-ios app-link-only app-lxh">
+						<a appid="33" platformid="2323" pos="33" href="javascript:void(0);" link="javascript:void(0);"><span class="icon-apple"></span> 正式版下载</a>
+					</div>
+					<div class="app-btn-android app-lxh">
+						<a appid="33" platformid="2323" pos="33" href="javascript:void(0);" link="http://lengxiaohua.cn/"><span class="icon-android"></span> Android版下载</a>
+					</div>
+					<div class="app-btn-ios">
+						<a appid="33" platformid="2323" pos="33" href="javascript:void(0);" link="javascript:void(0);">正式版下载</a><a appid="33" platformid="2323" pos="33" href="javascript:void(0);" link="http://lengxiaohua.cn/">越狱版下载</a>
+					</div>
+					<div class="app-btn-android">
+						<a appid="33" platformid="2323" pos="33" href="javascript:void(0);" link="http://lengxiaohua.cn/"><span  class="icon-android"></span> Android版下载</a>
+					</div>
+					<div class="app-btn-pc app-lxh">
+						<a appid="33" platformid="2323" pos="33" href="javascript:void(0);" link="http://lengxiaohua.cn/">进入官网查看详情</a>
+					</div>
+					<div class="app-btn-pc">
+						<a appid="33" platformid="2323" pos="33" href="javascript:void(0);" link="http://lengxiaohua.cn/">进入官网查看详情</a>
+					</div>
+				</div></div>
+				<div class="app-img"><a href="javascript:void(0);"><img src="img/2324232.png"/></a></div>
+			</div>
+		</div></div><!--mod-app-->
+		<div class="css-reset tb-buy" id="tb-buy" style="display:none;">
+			<a class="tb-buy-btn tb-buy-ico" href="#" style=""><span id="tb-buy-btn" class="tb-buy-off">立即<span class="tb-buy-text">购买</span></span></a>
+			<div id="tb-buy-form" class="clearfix" style="display:none;">
+				<form>
+					<ul class="tb-buy-list">
+						<li>
+							<input id="receiver" name="receiver" type="text" required  placeholder="收货人姓名"/>
+						</li>
+						<li>
+							<input id="tel" name="tel" type="tel" required  placeholder="手机号码"/>
+						</li>
+						<li>
+							<input id="inum" name="inum" type="number" min="1" required placeholder="购买数量"/>
+						</li>
+						<li>
+							<input id="addressArea" name="address_area" type="text" required  placeholder="所在地区"/>
+						</li>
+						<li>
+							<input id="address" name="address" type="text" required placeholder="详细地址"/>
+						</li>
+						<li>
+							<input id="abst" name="abst" type="text" placeholder="补充说明"/>
+						</li>
+					</ul>
+					<input type="hidden" id="pid" name="pid" value="0"/>
+					<input type="hidden" id="aid" name="aid" value=""/>
+					<input type="hidden" id="rid" name="rid" value=""/>
+					<input type="reset" style="display:none;"/>
+					<div class="tb-buy-btnbox">
+						<a id="tb-buy-submit" class="tb-buy-submit" href="#">提交</a>
+						<a id="tb-buy-cancel" class="tb-buy-cancle" href="#">取消</a>
+					</div>
+				</form>
+			</div>
+		</div><!--tb-buy-->
+		<div class="css-reset lay-mod mod-tb" id="mod-tb" style="display:none;"></div><!--mod-tb-->
+		<div class="css-reset lay-mod mod-tb">
+			<h2 class="mod-title tb-tit">快书包一小时到货 美味即刻送达</h2>
+			<div class="tb-con">
+				<ul class="tb-goods">
+					<li data-list="true">
+						<div class="tb-good-describe clearfix tb-detail-on" data-header="true">
+							<dl class="tb-info">
+								<dt>衣香丽影2012冬装新款 可脱卸兔毛</dt>
+								<dd>快书包价：<span class="tb-sale">54.00元</span></dd>
+								<dd>市&nbsp;场&nbsp;价&nbsp;：<span class="tb-sale-market">85.80元</span></dd>
+							</dl>
+							<div class="tb-img"><img src="img/332423424.jpg" alt="淘宝图片" /></div>
+							<div class="tb-detail"></div>
+						</div>
+						<div class="tb-good-detail" jdetail="true" style="display:none;">
+							<img src="img/332423424.jpg" alt="详情图"/>
+							<span class="tb-shop">这家店主疯了去年大卖50万条的超人气瘦腿袜居然打2折，还免送20元优惠券，尼玛打折还白拿20元优惠，跟不要钱一样！存告急！！我一口气抢3双，姐妹们抓紧囤货吧！疯抢地址：http://t.cn/zlCW8on</span>
+						</div>
+					</li>
+					<li data-list="true">
+						<div class="tb-good-describe clearfix tb-detail-on" data-header="true">
+							<dl class="tb-info">
+								<dt>衣香丽影2012冬装新款 可脱卸兔毛</dt>
+								<dd>快书包价：<span class="tb-sale">54.00元</span></dd>
+								<dd>市&nbsp;场&nbsp;价&nbsp;：<span class="tb-sale-market">85.80元</span></dd>
+							</dl>
+							<div class="tb-img"><img src="img/332423424.jpg" alt="淘宝图片" /></div>
+							<div class="tb-detail"></div>
+						</div>
+						<div class="tb-good-detail" jdetail="true" style="display:none;">
+							<img src="img/332423424.jpg" alt="详情图"/>
+							<span class="tb-shop">这家店主疯了去年大卖50万条的超人气瘦腿袜居然打2折，还免送20元优惠券，尼玛打折还白拿20元优惠，跟不要钱一样！存告急！！我一口气抢3双，姐妹们抓紧囤货吧！疯抢地址：http://t.cn/zlCW8on</span>
+						</div>
+					</li>
+					<li data-list="true">
+						<div class="tb-good-describe clearfix tb-detail-on" data-header="true">
+							<dl class="tb-info">
+								<dt>衣香丽影2012冬装新款 可脱卸兔毛</dt>
+								<dd>快书包价：<span class="tb-sale">54.00元</span></dd>
+								<dd>市&nbsp;场&nbsp;价&nbsp;：<span class="tb-sale-market">85.80元</span></dd>
+							</dl>
+							<div class="tb-img"><img src="img/332423424.jpg" alt="淘宝图片" /></div>
+							<div class="tb-detail"></div>
+						</div>
+						<div class="tb-good-detail" jdetail="true" style="display:none;">
+							<img src="img/332423424.jpg" alt="详情图"/>
+							<span class="tb-shop">这家店主疯了去年大卖50万条的超人气瘦腿袜居然打2折，还免送20元优惠券，尼玛打折还白拿20元优惠，跟不要钱一样！存告急！！我一口气抢3双，姐妹们抓紧囤货吧！疯抢地址：http://t.cn/zlCW8on</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div><!--mod-tb-->
+		<div class="css-reset"><a class="lay-see-more" href="#"><span>往期回顾</span></a></div><!--lay-see-more-->
+		<div id="lay-ad2" class="css-reset lay-ad"><a href="#"><img src="img/2.jpg"/></a></div><!--lay-ad-->
+		<div class="css-reset lay-tj">
+			<h2 class="lay-tj-title">关注更多精彩</h2>
+			<div class="lay-tj-box">
+				<dl data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="clearfix" href="weixin://profile/wxid_6449084490911" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323">
+					<dd>
+						<div>
+							<h3>美图秀秀</h3>
+							<p>一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</p>
+						</div>
+					</dd>
+					<dt class="tj-base tj_mtxx"><span class="img"><em style="background-image:url(img/asdfsfasfas.png);"></em></span><span class="hot"></span></dt>
+				</dl>
+				<dl data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="clearfix" href="weixin://profile/wxid_6449084490911" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323">
+					<dd>
+						<div>
+							<h3>美图秀秀</h3>
+							<p>一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</p>
+						</div>
+					</dd>
+					<dt class="tj-base tj_mtxx"><span class="new"></span></dt>
+				</dl>
+			</div>
+			<div class="lay-tj-box" id="lay-tj-box">
+				<div id="tj-infor" class="tj-infor" style="display:none;">
+					<div id="tj-point" class="tj-point"></div>
+					<dl class="clearfix" style="-webkit-border-image:none;-webkit-border-bottom:none;border-image:none;border-bottom:none;padding:0;margin:0;">
+						<dd>
+							<div style="padding-left:0;">
+								<h3 tit="true">美图秀秀</h3>
+								<p infor="true">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</p>
+								<a class="btn" href="#">马上关注微信号</a>
+							</div>
+						</dd>
+						<dt ico="true" class="tj-base tj_mtxx"></dt>
+					</dl>
+				</div>
+				<a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_mtxx" href="weixin://profile/wxid_6449084490911" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span class="img"><em style="background-image:url(img/asdfsfasfas.png);"></em></span><span tit="true">美图秀秀</span><span class="new"></span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_lmjs" href="weixin://profile/gh_7e59acba9009" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">辣妈教室</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_hqjj" href="weixin://profile/gh_3eb142fcd154" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">环球家居</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_lxhjx" href="weixin://profile/wxid_6449084490911" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">冷笑话精选</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_kdyy" href="weixin://profile/wxid_2871418719812" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">口袋英语</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_jcyl" href="weixin://profile/wxid_6858158581112" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">精彩语录</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_cypz" href="weixin://profile/wxid_7580605806712" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">创意铺子</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_xzmy" href="weixin://profile/gh_403818f03e97" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">星座秘语</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_cyy" href="weixin://profile/gh_e9dfd124d4b4" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">潮音乐</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_shxzh" href="weixin://profile/wxid_0374703745912" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">生活小智慧</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_qqss" href="weixin://profile/wxid_0760427603712" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">全球时尚</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_jcdy" href="weixin://profile/gh_1683dca0d9f1" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">精彩电影</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_jyxlx" href="weixin://profile/gh_7c496fd809e6" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">简易心理学</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_msgc" href="weixin://profile/gh_c3e30bfd1fbb" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">美食工场</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_hqqc" href="weixin://profile/gh_c3e30bfd1fbb" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">环球汽车</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_cycdp" href="weixin://profile/gh_c3e30bfd1fbb" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">穿衣潮搭配</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_azrjyx" href="weixin://profile/gh_c3e30bfd1fbb" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">安卓软件</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_xszk" href="weixin://profile/gh_c3e30bfd1fbb" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">限时折扣</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_hqyyb" href="weixin://profile/gh_c3e30bfd1fbb" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">环球音乐榜</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_mgxlx" href="weixin://profile/gh_c3e30bfd1fbb" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">魔鬼心理学</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_csdr" href="weixin://profile/gh_c3e30bfd1fbb" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">测试达人</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_wxs" href="weixin://profile/gh_c3e30bfd1fbb" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">微小微小说说</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_ksyd" href="weixin://profile/gh_c3e30bfd1fbb" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">看书小道</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_jkxts" href="weixin://profile/gh_c3e30bfd1fbb" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">健康小贴士</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_sfcdr" href="weixin://profile/gh_c3e30bfd1fbb" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">私房菜达人</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_xqqm" href="weixin://profile/gh_c3e30bfd1fbb" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">心情签名</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_ymsyms" href="weixin://profile/gh_c3e30bfd1fbb" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">要吗瘦要吗死</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_mzh" href="weixin://profile/gh_c3e30bfd1fbb" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">美妆汇</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a><a data-statsu="focuson" data-weixinid="wxid_6449084490911" data-statsp="1" data-statsid="1" class="tj-base tj_nnnwd" href="weixin://profile/gh_c3e30bfd1fbb" link="http://www.lengxiaohua.cn" data-wid="42323" data-uid="42323" data-cid="42323"><span tit="true">闹闹女巫店</span><span infor="true" class="infor">一入冷货深似海，从此不知纯洁为何物。生活有你贴心相伴。</span></a>
+			</div>
+			<div class="tj-more-top"></div>
+			<a class="tj-more" href="/?a=reclist&m=article&t=default">关注更多精彩微信</a>
+		</div><!--lay-tj-->
+	</div><!--lay-main-->
+	<footer class="lay-ft-btn"><a class="btn-ios" data-statsu="download" data-statsp="1" data-statsid="12" href="http://admin.appd.lengxiaohua.cn/count_ios.php?source=wxweb"><span class="icon-apple"></span>苹果版下载</a><a class="btn-android" href="http://img.yingyonghui.com/apk/344454/com.feibo.joke.1344494210604.apk" data-statsu="download" data-statsp="1" data-statsid="12"><span  class="icon-android"></span>安卓版下载</a><a href="http://cnrdn.com/OzA5"><span class="icon-home"></span>冷笑话官网</a><a id="returntop" href="#"><span class="icon-arrow-up"></span>返回顶部</a></footer><!--lay-ft-->
+</div><!--layout-->
+<!--底层库-->
+	<![if !IE]><script src="js/zepto.min.js"></script><![endif]>
+	<!--MP3模块存在时取消该项if IE判断，并删除zepto引用-->
+	<!--[if IE]><script src="js/jquery-1.8.0.min.js"></script><![endif]-->
+	<!--该段为临时引用-->
+	<script src="js/jquery-1.8.0.min.js"></script>
+<!--公共js-->
+	<script src="js/global.js"></script>
+	<!--<script src="js/global.min.js"></script>-->
+<!--字体图标-->
+	<!--[if lte IE 7]><script src="icomoon73206/lte-ie7.js"></script><![endif]-->
+<!--MP3模块-->
+	<script src="johndyer-mediaelement-96a9f4a/build/mediaelement-and-player.min.js"></script>
+	<script>
+	$("audio").mediaelementplayer();
+	$("#layout").on("click","[data-mp3img]",function(e){
+		$(this).next().find(".mejs-playpause-button").click();
+		return false;
+	});
+	</script>
+<!--优酷视频-->
+	<script type="text/javascript" src="http://player.youku.com/jsapi"></script>
+	<script type="text/javascript">
+	var uk={isready:false};
+	var ukp=function(layoutid,vid){
+		return new YKU.Player(layoutid,{
+				client_id:'e2381404cb7d5f31',
+				vid:vid,
+				width:270,
+				height:250,
+				events:{ 
+					'onPlayerReady': function(){uk.isready=true;} //播放器准备就绪调用
+				}
+			} 
+		);
+	};
+	$("[data-yk]").each(function(){
+		var self=$(this);
+		var idName=self.attr("id"),
+			vid=self.data("vid");
+		//U哭视频对象创建获取
+		uk["yk-py-"+idName]=ukp(idName,vid);
+		//自定义播放按钮
+		uk["yk-us-"+idName]=function(){
+			//判断如果使用video播放器使用自定义播放按钮
+			if(self.find("video").size()>0){
+				//按钮创建
+				self.append('<div class="yk-play-btn" id="yk-py-'+idName+'"></div>');
+				//按钮事件
+				$("#yk-py-"+idName).on("click",function(){
+					var idName=$(this).attr("id");
+					if(uk[idName]){
+						uk[idName].playVideo();
+						$(this).hide();
+					}
+				});
+			}
+		};
+		uk["yk-t-"+idName]=function(){
+			if(uk.isready){
+				uk["yk-us-"+idName]();
+			}else{
+				setTimeout(uk["yk-t-"+idName],200);
+			}
+		};
+		setTimeout(uk["yk-t-"+idName],200);
+	});
+	</script>
+<!--微信内容-->
+	<script>
+	/*document.addEventListener && document.addEventListener('WeixinJSBridgeReady', function onBridgeReady(e) {alert("T");
+		gp.stats();//统计
+	},false)*/
+	</script>
+</body>
+</html>
